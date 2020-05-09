@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Workspace from './components/pages/Workspace';
-import GlobalNavigation from './components/molecules/GlobalNavigation';
-import GlobalSidebar from './components/molecules/GlobalSidebar';
+import Workspace from './components/Workspace/pages/Workspace';
+import Navigation from './components/Global/molecules/Navigation';
+import Sidebar from './components/Global/molecules/Sidebar';
 
 const headerHeightRem = 2.4;
 const leftWidthRem = 3.6;
@@ -44,11 +44,11 @@ export default () => {
   return (
     <App>
       <Header>
-        <GlobalNavigation></GlobalNavigation>
+        <Navigation></Navigation>
       </Header>
       <Content>
         <Left>
-          <GlobalSidebar></GlobalSidebar>
+          <Sidebar></Sidebar>
         </Left>
         <Right>
           <Workspace></Workspace>

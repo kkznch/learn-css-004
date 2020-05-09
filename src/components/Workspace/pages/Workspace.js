@@ -16,7 +16,7 @@ const Left = styled.div`
 height: 100%;
 width: ${leftWidthRem}rem;
 background-color: #1b191f;
-border-right: ridge 1px #292b2f;
+border-right: solid 1px #292b2f;
 `;
 
 const Right = styled.div`

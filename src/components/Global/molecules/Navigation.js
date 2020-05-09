@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { ReactComponent as ArrowLeftSvg } from '../../assets/images/arrow_left.svg';
-import { ReactComponent as ArrowRightSvg } from '../../assets/images/arrow_right.svg';
-import { ReactComponent as ClockSvg } from '../../assets/images/clock.svg';
-import { ReactComponent as SearchSvg } from '../../assets/images/search.svg';
-import { ReactComponent as HelpSvg } from '../../assets/images/help.svg';
+import { ReactComponent as ArrowLeftSvg } from '../../../assets/images/arrow_left.svg';
+import { ReactComponent as ArrowRightSvg } from '../../../assets/images/arrow_right.svg';
+import { ReactComponent as ClockSvg } from '../../../assets/images/clock.svg';
+import { ReactComponent as SearchSvg } from '../../../assets/images/search.svg';
+import { ReactComponent as HelpSvg } from '../../../assets/images/help.svg';
 
 const iconFadeIn = keyframes`
 100% {
