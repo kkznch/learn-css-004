@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Workspace from './components/pages/Workspace';
-import TopNavigation from './components/molecules/TopNavigation';
+import GlobalNavigation from './components/molecules/GlobalNavigation';
 
 const headerHeightRem = 2.4;
 const sidebarWidthRem = 3.6;
@@ -43,7 +43,7 @@ export default () => {
   return (
     <App>
       <Header>
-        <TopNavigation></TopNavigation>
+        <GlobalNavigation></GlobalNavigation>
       </Header>
       <Wrapper>
         <Sidebar></Sidebar>
