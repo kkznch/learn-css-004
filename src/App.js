@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Workspace from './components/pages/Workspace';
 import GlobalNavigation from './components/molecules/GlobalNavigation';
+import GlobalSidebar from './components/molecules/GlobalSidebar';
 
 const headerHeightRem = 2.4;
 const sidebarWidthRem = 3.6;
@@ -20,21 +21,21 @@ background-color: #212124;
 border-bottom: ridge 1px #292b2f;
 `;
 
-const Wrapper = styled.div`
+const Content = styled.div`
 display: flex;
 flex-direction: row;
 height: calc(100% - ${headerHeightRem}rem);
 width: 100%;
 `;
 
-const Sidebar = styled.div`
+const Left = styled.div`
 height: 100%;
 width: ${sidebarWidthRem}rem;
 background-color: #1b191f;
 border-right: ridge 1px #292b2f;
 `;
 
-const Content = styled.div`
+const Right = styled.div`
 height: 100%;
 width: calc(100% - ${sidebarWidthRem}rem);
 `;
@@ -45,12 +46,14 @@ export default () => {
       <Header>
         <GlobalNavigation></GlobalNavigation>
       </Header>
-      <Wrapper>
-        <Sidebar></Sidebar>
-        <Content>
+      <Content>
+        <Left>
+          <GlobalSidebar></GlobalSidebar>
+        </Left>
+        <Right>
           <Workspace></Workspace>
-        </Content>
-      </Wrapper>
+        </Right>
+      </Content>
     </App>
   );
 }
