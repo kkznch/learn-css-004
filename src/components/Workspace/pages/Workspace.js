@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import WorkspaceSidebar from '../molecules/WorkspaceSidebar';
-import WorkspaceContent from '../molecules/WorkspaceContent';
+import Sidebar from '../molecules/Sidebar';
+import Content from '../molecules/Content';
 
 const leftWidthRem = 14;
 
@@ -24,15 +24,14 @@ height: 100%;
 width: calc(100% - ${leftWidthRem}rem);
 `;
 
-
 export default () => {
   return (
     <Wrapper>
       <Left>
-        <WorkspaceSidebar></WorkspaceSidebar>
+        <Sidebar></Sidebar>
       </Left>
       <Right>
-        <WorkspaceContent></WorkspaceContent>
+        <Content></Content>
       </Right>
     </Wrapper>
   );
