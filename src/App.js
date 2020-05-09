@@ -16,7 +16,8 @@ width: 100vw;
 const Header = styled.div`
 height: ${headerHeightRem}rem;
 width: 100%;
-background-color: red;
+background-color: #212124;
+border-bottom: ridge 1px #292b2f;
 `;
 
 const Wrapper = styled.div`
@@ -24,19 +25,18 @@ display: flex;
 flex-direction: row;
 height: calc(100% - ${headerHeightRem}rem);
 width: 100%;
-background-color: blue;
 `;
 
 const Sidebar = styled.div`
 height: 100%;
 width: ${sidebarWidthRem}rem;
-background-color: pink;
+background-color: #1b191f;
+border-right: ridge 1px #292b2f;
 `;
 
 const Content = styled.div`
 height: 100%;
 width: calc(100% - ${sidebarWidthRem}rem);
-background-color: yellow;
 `;
 
 export default () => {
