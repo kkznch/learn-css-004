@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import Header from '../atoms/Sidebar/Header';
 
 const topHeightRem = 3;
 
@@ -40,7 +41,9 @@ border-bottom: solid 1px #292b2f;
 export default () => {
   return (
     <Wrapper>
-      <Top></Top>
+      <Top>
+        <Header></Header>
+      </Top>
       <Middle></Middle>
       <Bottom></Bottom>
     </Wrapper>
